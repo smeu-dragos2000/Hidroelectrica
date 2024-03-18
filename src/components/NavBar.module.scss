@@ -1,0 +1,29 @@
+
+.navContainer {
+    width: 80%;
+    height: 60px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   .logo {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        img {
+            width: 50px;
+        }
+    }
+    ul {
+        display: flex;
+        list-style: none;
+        gap: 3rem;
+        a {
+            color: black;
+            font-size: 1.2rem;
+            &:hover {
+                color: rgb(77, 77, 77);
+            }
+        }
+    }
+}

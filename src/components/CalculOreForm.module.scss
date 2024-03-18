@@ -1,0 +1,25 @@
+.formWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .timePicker {
+        background-color: white;
+        label {
+            font-size: 1.2rem !important;
+            font-weight: 600;
+            color: rgb(0, 9, 40);
+        }
+    }
+    .index {
+        padding-right: 1rem;
+    }
+    .ore {
+        padding-left: 1rem;
+        span {
+            font-size: 1rem;
+        }
+    }
+    .buttonCalculOre:disabled {
+        cursor: not-allowed;
+    }
+}

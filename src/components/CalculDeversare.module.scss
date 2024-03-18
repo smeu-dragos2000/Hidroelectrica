@@ -1,0 +1,42 @@
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .formWrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .debit {
+            display: flex;
+            width: 100%;
+            justify-content: space-evenly;
+        }
+    }
+}
+
+
+
+td, th {
+    border: 1px solid black;
+    padding: 1rem;
+    background-color: white;
+}
+.cell {
+    border: 1px solid black !important;
+}
+
+button {
+    margin: 1rem;
+}
+
+.tabelDeversareRezultat {
+    width: 98%;
+    font-size: 1.1rem;
+    border-spacing: 0.5rem;
+    td, th {
+        border: 1px solid black;
+        padding: 1rem 0.5rem;
+    }
+
+}

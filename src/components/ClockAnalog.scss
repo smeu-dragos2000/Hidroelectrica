@@ -1,0 +1,29 @@
+@import '../assets/colors';
+
+.clock-analog {
+    border-width: 5px !important;
+	border-color: $greenClock !important;
+	background-color: black;
+    box-shadow: 0 0 10px black;
+    
+    b {
+        color: $greenClock !important;
+        font-size: 1.2rem !important;
+    }
+    .rac-clock-hand, .rac-mid-point {
+        background-color: $greenClock !important;
+    }
+
+    // Clock hand - Hours
+    .rac-clock-hand:nth-child(4) {
+        height: 30% !important;
+        width: 10px !important;
+        border-radius: 50%;
+    }
+    // Clock hand - Minutes
+    .rac-clock-hand:nth-child(3) {
+        height: 40% !important;
+        width: 5px !important;
+        border-radius: 50%;
+    }
+}

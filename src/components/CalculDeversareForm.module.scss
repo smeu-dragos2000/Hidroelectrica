@@ -1,0 +1,12 @@
+.formControl {
+    min-width: 150px !important;
+    margin: 0.5rem !important;
+    background-color: white;
+    label {
+        font-weight: 600;
+        font-size: 1.1rem;
+    }
+}
+.cell {
+    border: 1px solid black !important;
+}
