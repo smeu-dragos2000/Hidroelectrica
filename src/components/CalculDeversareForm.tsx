@@ -1,5 +1,5 @@
-import { Dispatch, FC, SetStateAction, useState } from "react";
-import { FormControl, Select, InputLabel, MenuItem, SelectChangeEvent } from '@mui/material';
+import { Dispatch, FC, SetStateAction } from "react";
+import { FormControl, Select, InputLabel, MenuItem } from '@mui/material';
 import style from './CalculDeversareForm.module.scss'
 
 interface DataFormProps {

@@ -1,6 +1,6 @@
 import style from './CalculOreForm.module.scss'
-import { Dispatch, FC, SetStateAction, useState } from "react";
-import dayjs, { Dayjs } from 'dayjs';
+import { Dispatch, FC, SetStateAction } from "react";
+import { Dayjs } from "dayjs";
 import { DemoContainer } from "@mui/x-date-pickers/internals/demo";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
@@ -28,14 +28,15 @@ const CalculOreForm: FC<CalculOreFormProps> = ({
   const indexForm: number = id + 1;
   
   const calculateTime = () => {
-    const timeInSeconds = (stopTime.$d - startTime.$d) / 1000;
+    // const timeInSeconds = (stopTime.get("minute") - startTime.get("minute")) / 1000;
+    const timeInSeconds = stopTime.diff(startTime) / 1000;
     const totalMinutes = timeInSeconds / 60;
     const minutes = totalMinutes % 60;
     const hours = Math.floor(totalMinutes / 60);
     const time = { hours: hours, minutes: minutes };
     const timeString = `${time.hours}h ${time.minutes}'`;
 
-    console.log(stopTime.$d)
+
     
     setTimeFrames(
       (prevState) =>
